@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Number Raffle</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Random Number Generator</h2>
+        <div class="input-group">
+            <label for="minNumber">Start Number (min):</label>
+            <input type="number" id="minNumber" value="1" min="1">
+        </div>
+        <div class="input-group">
+            <label for="maxNumber">End Number (max):</label>
+            <input type="number" id="maxNumber" value="100" min="1">
+        </div>
+        <div class="input-group">
+            <label for="count">How many numbers to draw:</label>
+            <input type="number" id="count" value="1" min="1">
+        </div>
+        <button onclick="drawNumbers()">Draw Numbers</button>
+        <h3>Drawn Numbers:</h3>
+        <div id="output" class="output"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
